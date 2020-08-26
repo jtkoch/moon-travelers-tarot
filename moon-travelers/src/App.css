@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.home {
+  background-image: url(./images/sage.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.about {
+  color: white;
+  background-image: url(./images/galaxy.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  color: white;
+  background-image: url(./images/flowers.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-form {
+  margin: 30px;
+  width: 55%;
+  display: inline-block;
+}
