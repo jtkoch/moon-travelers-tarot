@@ -5,26 +5,18 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
-.home {
-  background-image: url(./images/sage.jpg);
+.home-logo {
+  background-image: url(./images/Content/sage.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment: local;
+  background-position: right 0% bottom 60%;
   background-size: cover;
 }
 
-.about {
-  color: white;
-  background-image: url(./images/galaxy.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
 
 .contact {
   color: white;
-  background-image: url(./images/flowers.jpg);
+  background-image: url(./images/Content/flowers.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
