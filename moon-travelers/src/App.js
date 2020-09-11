@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import styled from 'styled-components'
 import Footer from './components/Footer'
@@ -20,6 +19,7 @@ const Navigation = styled.div`
   font-size: 1rem;
   align-items: left;
   padding: 1.75%;
+  text-shadow: .5px .5px gray
 `
 
 const Social = styled.a`
@@ -41,7 +41,6 @@ function App() {
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto"  >
                 <Link style={{ color: "#a582b8" }} className="nav-link" to="/" >Home</Link>
-                <Link style={{ color: "#a582b8" }} className="nav-link" to="/about" >About</Link>
                 <Link style={{ color: "#a582b8" }} className="nav-link" to="/contact" >Contact/Booking</Link>
               </Nav>
               <div>
@@ -53,7 +52,6 @@ function App() {
         </Navigation>
 
         <Route path="/" exact render={() => <HomePage />} />
-        <Route path="/about" render={() => <AboutPage />} />
         <Route path="/contact" render={() => <ContactPage />} />
 
         <Footer />
