@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMoon } from "@fortawesome/free-solid-svg-icons"
+import ContactPage from './ContactPage'
 
 import mainLogo from '../images/Logo/logo2.png'
+import state from '../images/Content/nebraska-state.png'
 import yoga from '../images/Content/yoga.jpg'
 import andrea2 from '../images/Content/andrea2.jpg'
 import cards from '../images/Content/cards.jpg'
@@ -13,6 +13,7 @@ import house from '../images/Content/house.jpg'
 import bee from '../images/Content/bee.jpg'
 import nebraska from '../images/Content/nebraska.jpg'
 import andrea from '../images/Content/andrea.jpg'
+
 
 
 const HomeContainer = styled.div`
@@ -39,6 +40,14 @@ const Location = styled.p`
         padding: 20%;
     }
 `
+const State = styled.img`
+    margin: 40px;
+    width: 100px;
+
+    @media (max-width: 500px) {
+        width: 70px;
+    }
+`
 const Info = styled.p`
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px #000000;
@@ -54,6 +63,7 @@ const ImageMain = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 4px;
+    margin-bottom: 100px;
 `
 const ImageColumn = styled.div`
     flex: 25%;
@@ -69,21 +79,6 @@ const Images = styled.img`
     width: 100%;
     margin: 4px;
 `
-const Quote = styled.div`
-    margin-top: 200px;
-    padding: 10%;
-
-    @media (max-width: 500px) {
-        font-size: 1rem;
-    }
-`
-const QuoteWords = styled.p`
-    font-size: 1.5rem;
-
-    @media (max-width: 500px) {
-        font-size: 1rem;
-    }
-`
 
 
 
@@ -97,9 +92,10 @@ export default function HomePage() {
             <div>
                 <Location>
                     Located in <br></br> 
-                    Omaha, Nebraska
+                    Omaha, Nebraska <br></br>
+                    <State src={state} alt="state-outline"/>
                 </Location>
-                <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+                
             </div>
             <Info>
                 Services and Pricing: 
@@ -133,14 +129,9 @@ export default function HomePage() {
                 </ImageColumn>
             </ImageMain>
 
-            <Quote className="quote">
-                <QuoteWords>
-                    She didn't change. <br></br>
-                    She just found the courage <br></br>
-                    to stop being what she was not.
-                </QuoteWords>
-            </Quote>
-
+            <div className="contact">
+                <ContactPage />
+            </div>
         </HomeContainer>
     )
 }
