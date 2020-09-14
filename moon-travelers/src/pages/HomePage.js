@@ -32,11 +32,11 @@ const HomeLogo = styled.img`
 const Location = styled.p`
     font-size: 2rem;
     text-shadow: 2px 2px 4px #000000;
-    padding: 2%;
+    padding: 3%;
 
     @media (max-width: 500px) {
         font-size: 1.5rem;
-        padding-bottom: 20%;
+        padding: 20%;
     }
 `
 const Info = styled.p`
@@ -68,6 +68,21 @@ const Images = styled.img`
     vertical-align: text-top;
     width: 100%;
     margin: 4px;
+`
+const Quote = styled.div`
+    margin-top: 200px;
+    padding: 10%;
+
+    @media (max-width: 500px) {
+        font-size: 1rem;
+    }
+`
+const QuoteWords = styled.p`
+    font-size: 1.5rem;
+
+    @media (max-width: 500px) {
+        font-size: 1rem;
+    }
 `
 
 
@@ -117,6 +132,14 @@ export default function HomePage() {
                     <Images src={house} />
                 </ImageColumn>
             </ImageMain>
+
+            <Quote className="quote">
+                <QuoteWords>
+                    She didn't change. <br></br>
+                    She just found the courage <br></br>
+                    to stop being what she was not.
+                </QuoteWords>
+            </Quote>
 
         </HomeContainer>
     )
