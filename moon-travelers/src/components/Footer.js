@@ -10,7 +10,7 @@ const StickyFooter = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 100px;
+  height: 150px;
   width: 100%;
   padding: 1%;
 `
