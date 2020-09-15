@@ -55,7 +55,7 @@ class ContactPage extends React.Component {
         message: '',
         email: '',
         service: '',
-        buttonText: 'Send Message'
+        buttonText: 'Message Sent'
     })
 }
 
@@ -73,7 +73,7 @@ formSubmit = (e) => {
       service: this.state.service
   }
   
-  Axios.post('', data) ////////////////////////////////// <<<<<<<<<<<<-------------- add link to back end here
+  Axios.post('http://localhost:3030/v1', data) ////////////////////////////////// <<<<<<<<<<<<-------------- add link to back end here
   .then( res => {
       this.setState({ sent: true }, this.resetForm())
       console.log("Network success " + data.name, data.email)
