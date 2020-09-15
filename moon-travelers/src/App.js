@@ -41,7 +41,7 @@ function App() {
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto"  >
                 <Link style={{ color: "#a582b8" }} className="nav-link" to="/" >Home</Link>
-                <Link style={{ color: "#a582b8" }} className="nav-link" to="/contact" >Contact/Booking</Link>
+                <a style={{ color: "#a582b8" }} className="nav-link" href="#contact" >Contact/Booking</a>
               </Nav>
               <div>
                 <Social href="https://www.facebook.com/Moon-Travelers-Tarot-220673835218164" target=" _blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></Social>
@@ -52,7 +52,10 @@ function App() {
         </Navigation>
 
         <Route path="/" exact render={() => <HomePage />} />
-        <Route path="/contact" render={() => <ContactPage />} />
+
+        <div id="contact">
+          <ContactPage />
+        </div>
 
         <Footer />
       </Container>

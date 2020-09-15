@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import ContactPage from './ContactPage'
 
 import mainLogo from '../images/Logo/logo2.png'
 import state from '../images/Content/nebraska-state.png'
@@ -22,11 +21,11 @@ const HomeContainer = styled.div`
 
 const HomeLogo = styled.img`
     width: 60%;
-    margin: 100px;
+    margin: 8rem;
 
     @media (max-width: 500px) {
         width: 80%;
-        margin: 25px;
+        margin: 2rem;
     }
 `
 
@@ -51,12 +50,36 @@ const State = styled.img`
 const Info = styled.p`
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px #000000;
-    padding: 3%;
+    padding: 2%;
 
     @media (max-width: 500px) {
         font-size: 1rem;
         padding-bottom: 20%;
     }
+`
+const BookingContainer = styled.div`
+    margin: 5%;
+`
+const Booking = styled.a`
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    padding: 1%;
+    border-radius: .5rem;
+
+    @media (max-width: 500px) {
+        font-size: .70rem;
+        border: 1px solid white;
+        padding: 1.5%;
+        border-radius: .5rem;
+    }
+
+    &:hover {
+        background: white;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+      }
 `
 const ImageMain = styled.div`
     display: flex;
@@ -109,7 +132,13 @@ export default function HomePage() {
                 <br></br>
                 Phone readings are also available upon request
                 <br></br>
+
+                
             </Info>
+            
+            <BookingContainer>
+                <Booking href="#contact">Schedule a Reading!</Booking>
+            </BookingContainer>
 
             <ImageMain classNme="row">
                 <ImageColumn className="column">
@@ -129,9 +158,6 @@ export default function HomePage() {
                 </ImageColumn>
             </ImageMain>
 
-            <div className="contact">
-                <ContactPage />
-            </div>
         </HomeContainer>
     )
 }
