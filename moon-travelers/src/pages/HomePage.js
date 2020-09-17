@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import mainLogo from '../images/Logo/logo2.png'
+import mainLogo from '../images/Logo/logo1.png'
 import state from '../images/Content/nebraska-state.png'
 import yoga from '../images/Content/yoga.jpg'
 import andrea2 from '../images/Content/andrea2.jpg'
@@ -20,45 +20,46 @@ const HomeContainer = styled.div`
 `
 
 const HomeLogo = styled.img`
-    width: 60%;
-    margin: 8rem;
+    width: 75%;
+    margin-top: -4rem;
 
     @media (max-width: 500px) {
-        width: 80%;
-        margin: 2rem;
+        width: 100%;
+        margin-top: 0rem;
     }
 `
 
 const Location = styled.p`
     font-size: 2rem;
-    text-shadow: 2px 2px 4px #000000;
-    padding: 3%;
+    padding: 1%;
 
     @media (max-width: 500px) {
-        font-size: 1.5rem;
-        padding: 20%;
+        font-size: 1.25rem;
+        padding: 0%;
     }
 `
 const State = styled.img`
-    margin: 40px;
+    margin: 20px;
     width: 100px;
 
     @media (max-width: 500px) {
         width: 70px;
+        margin: 10px;
     }
 `
 const Info = styled.p`
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px #000000;
-    padding: 2%;
+    font-size: 2.5rem;
+    padding: 0%;
+    line-height: 3.25rem;
 
     @media (max-width: 500px) {
-        font-size: 1rem;
-        padding-bottom: 20%;
+        font-size: 1.25rem;
+        padding-bottom: 5%;
+        line-height: 2rem;
     }
 `
 const BookingContainer = styled.div`
-    margin: 5%;
+    margin: 4%;
 `
 const Booking = styled.a`
     color: white;
@@ -121,10 +122,10 @@ export default function HomePage() {
                 
             </div>
             <Info>
-                Services and Pricing: 
+                Services and Pricing:
                 <br></br>
                 <br></br>
-                Mini Consult (30min) - $35 <br></br>
+                Mini Consult (15min-20min) - $35 <br></br>
                 Private Reading(45min-1hr) - $60 <br></br>
                 Private Dinner/Party(Hourly Rate) - $125 <br></br>
                 Pop Ups and Social Events - Prices will vary

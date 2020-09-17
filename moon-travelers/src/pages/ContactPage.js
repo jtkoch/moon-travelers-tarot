@@ -10,6 +10,7 @@ import styled from 'styled-components'
 
 const Questions = styled.h1`
     padding-bottom: 2%;
+    font-size: 4rem;
 
     @media (max-width: 500px) {
         font-size: 2.5rem;

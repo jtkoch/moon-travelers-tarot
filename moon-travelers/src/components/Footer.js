@@ -40,10 +40,10 @@ function Footer() {
           <div>
             <Logo src={footerlogo} />
           </div>
-          <Site>Website by Jensen Koch</Site>
+          <Site>Website by jensenkoch.com</Site>
           <SocialContainer>
             <Social href="https://www.facebook.com/Moon-Travelers-Tarot-220673835218164" target=" _blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></Social>
-            <Social href="https://www.instagram.com/dunnette89/" target=" _blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></Social>
+            <Social href="https://www.instagram.com/moontravelers/" target=" _blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></Social>
           </SocialContainer>
 
           
