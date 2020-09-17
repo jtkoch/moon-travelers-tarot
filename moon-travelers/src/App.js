@@ -25,7 +25,6 @@ const Navigation = styled.div`
 const Social = styled.a`
   padding: 10px;
   color: #a582b8;
-
   @media (max-width: 500px) {
     padding: 5px;
   }
@@ -40,12 +39,12 @@ function App() {
             <Navbar.Toggle className="border-0 navbar-dark" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto"  >
-                <Link style={{ color: "#a582b8" }} className="nav-link" to="/" >Home</Link>
-                <a style={{ color: "#a582b8" }} className="nav-link" href="#contact" >Contact/Booking</a>
+                <Link style={{ color: "white" }} className="nav-link" to="/" >Home</Link>
+                <a style={{ color: "white" }} className="nav-link" href="#contact" >Contact/Booking</a>
               </Nav>
               <div>
                 <Social href="https://www.facebook.com/Moon-Travelers-Tarot-220673835218164" target=" _blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></Social>
-                <Social href="https://www.instagram.com/dunnette89/" target=" _blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></Social>
+                <Social href="https://www.instagram.com/moontravelers/" target=" _blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></Social>
               </div>
             </Navbar.Collapse>
           </Navbar>
